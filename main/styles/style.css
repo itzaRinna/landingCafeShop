@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+/*========== Colours ==========*/
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0A0604;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  background-color: rgba(12, 3, 4, 0.8);
+  width: auto;
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
+  border: solid 0.5px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.container img {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.container .box img {
+  width: 3rem;
+  height: 3rem;
+  padding-top: 10px;
+  padding-right: 40px;
+}
+.container .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 10rem;
+  color: white;
+}
+
+.container .logo h1 {
+  font-size: 25px;
+}
+
+.menu-box {
+  width: 0;
+  height: 0;
+  position: fixed;
+  background-color: #000000;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom-left-radius: 100%;
+  transition: width 0.5s, height 0.5s, border-radius 0.5s;
+}
+
+.menu-box.open-menu {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 0;
+}
+
+.menu-box.open-menu ul li {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s, opacity 1s;
+  transition-delay: 0.5s;
+}
+
+.menu-box ul li {
+  list-style: none;
+  margin: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.menu-box ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: gray;
+  font-size: 6.5rem;
+  font-weight: 600;
+  position: relative;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+.menu-box ul li a:hover {
+  font-size: 8rem;
+  color: cyan;
+}
+
+.main {
+  width: 100vw;
+  height: 54vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .left-content {
+  width: 48rem;
+  height: 48rem;
+  background-color: #10060F;
+}
+.main .left-content h1 {
+  padding: 5rem;
+  text-align: left;
+  font-size: 6rem;
+  line-height: 1;
+  background: -webkit-linear-gradient(45deg, #3c1a0e, #e19b68);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main .left-content .button {
+  width: 8.5rem;
+  height: 2.5rem;
+  border-radius: 5rem;
+  margin: -4rem auto;
+  text-align: center;
+  color: cyan;
+  padding-top: 12px;
+  background: black;
+}
+.main .left-content .button:hover {
+  background: linear-gradient(60deg, cyan, lavender);
+}
+
+.main .right-content {
+  width: 65rem;
+  height: 54rem;
+  background-color: blueviolet;
+  border-radius: 2rem;
+}/*# sourceMappingURL=style.css.map */
