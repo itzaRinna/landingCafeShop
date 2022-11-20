@@ -10,11 +10,11 @@
 
 .cup{
     position: absolute;
-    width: 200px;
-    height: 180px;
+    width: 275px;
+    height: 210px;
     border: 8px solid wheat;
     box-shadow: 0 0 0 12px black;
-    border-radius: 10px 10px 60px 75px;
+    border-radius: 15px 15px 65px 85px;
     background: url(/media-assets/coffee.png);
     background-repeat: repeat-x;
     background-position: 0 130px;
@@ -23,9 +23,9 @@
 .cup .cup-handle{
     position: absolute;
     top: 10px;
-    right: -90px;
-    width: 65px;
-    height: 100px;
-    border: 8px solid black;
-    border-radius: 20px 10px 50px 20px;
+    right: -110px;
+    width: 80px;
+    height: 130px;
+    border: 10px solid black;
+    border-radius: 35px 36px 80px 36px;
 }
