@@ -1,4 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+@-webkit-keyframes filling {
+  0%, 100% {
+    background-position: 0 130px;
+  }
+  50% {
+    background-position: 600px -70px;
+  }
+}
+@keyframes filling {
+  0%, 100% {
+    background-position: 0 130px;
+  }
+  50% {
+    background-position: 600px -70px;
+  }
+}
+.cup {
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  border: 8px solid wheat;
+  box-shadow: 0 0 0 12px black;
+  border-radius: 10px 10px 60px 75px;
+  background: url(/media-assets/coffee.png);
+  background-repeat: repeat-x;
+  background-position: 0 130px;
+  -webkit-animation: filling 4s infinite;
+          animation: filling 4s infinite;
+}
+
+.cup .cup-handle {
+  position: absolute;
+  top: 10px;
+  right: -90px;
+  width: 65px;
+  height: 100px;
+  border: 8px solid black;
+  border-radius: 20px 10px 50px 20px;
+}
+
 /*========== Colours ==========*/
 body {
   margin: 0;
@@ -47,16 +87,18 @@ body {
 }
 
 .menu-box {
+  background-color: #10060F;
+  height: 100%;
   width: 0;
-  height: 0;
   position: fixed;
-  background-color: #000000;
+  z-index: 1;
   top: 0;
   right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
+  float: left;
   border-bottom-left-radius: 100%;
   transition: width 0.5s, height 0.5s, border-radius 0.5s;
 }
@@ -114,7 +156,7 @@ body {
   text-align: left;
   font-size: 6rem;
   line-height: 1;
-  background: -webkit-linear-gradient(45deg, #3c1a0e, #e19b68);
+  background: -webkit-linear-gradient(15deg, #3c1a0e, #e19b68);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -135,6 +177,9 @@ body {
 .main .right-content {
   width: 65rem;
   height: 54rem;
-  background-color: blueviolet;
+  background-color: #e19b68;
   border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

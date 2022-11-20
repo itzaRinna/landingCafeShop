@@ -1,0 +1,31 @@
+@keyframes filling{
+    0%,100%{
+        background-position: 0 130px;
+    }
+
+    50%{
+        background-position: 600px -70px;
+    }
+}
+
+.cup{
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    border: 8px solid wheat;
+    box-shadow: 0 0 0 12px black;
+    border-radius: 10px 10px 60px 75px;
+    background: url(/media-assets/coffee.png);
+    background-repeat: repeat-x;
+    background-position: 0 130px;
+    animation: filling 4s infinite;
+}
+.cup .cup-handle{
+    position: absolute;
+    top: 10px;
+    right: -90px;
+    width: 65px;
+    height: 100px;
+    border: 8px solid black;
+    border-radius: 20px 10px 50px 20px;
+}

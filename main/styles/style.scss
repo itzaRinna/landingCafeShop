@@ -1,9 +1,9 @@
-
+@import './coffee';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
 
 /*========== Colours ==========*/
-$cultured: #F3F3F3ff;
+$white-coffee: #e6e0d4;
 $black-bean: #3C1A0Eff;
 $tan-crayola: #E19B68ff;
 $eerie-black: #212121;
@@ -59,22 +59,25 @@ body{
     }
 }
 
-.container .logo h1{
-    font-size: 25px;
+.container .logo {
+    h1{
+      font-size: 25px;  
+    }
 }
 
 .menu-box{
+    background-color: $xiketic;
+    height: 100%;
     width: 0;
-    height: 0;
     position: fixed;
-    background-color: #000000;
+    z-index: 1;
     top: 0;
     right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    
+    overflow-x: hidden;
+    float: left;
     border-bottom-left-radius: 100%;
     transition: width 0.5s, height 0.5s, border-radius 0.5s;
 }
@@ -130,7 +133,7 @@ body{
         text-align: left;
         font-size: 6rem;
         line-height: 1;
-        background: -webkit-linear-gradient(45deg, $black-bean, $tan-crayola);
+        background: -webkit-linear-gradient(15deg, $black-bean, $tan-crayola);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -153,7 +156,10 @@ body{
 .main .right-content{
     width: 65rem;
     height: 54rem;
-    background-color: blueviolet;
+    background-color: $tan-crayola;
     border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
