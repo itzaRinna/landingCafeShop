@@ -1,3 +1,4 @@
+@import './colours';
 @keyframes filling{
     0%,100%{
         background-position: 0 130px;
@@ -13,7 +14,7 @@
     width: 275px;
     height: 210px;
     border: 8px solid wheat;
-    box-shadow: 0 0 0 12px black;
+    box-shadow: 0 0 0 12px $black-bean;
     border-radius: 15px 15px 65px 85px;
     background: url(/media-assets/coffee.png);
     background-repeat: repeat-x;
@@ -26,6 +27,6 @@
     right: -110px;
     width: 80px;
     height: 130px;
-    border: 10px solid black;
+    border: 10px solid $black-bean;
     border-radius: 35px 36px 80px 36px;
 }

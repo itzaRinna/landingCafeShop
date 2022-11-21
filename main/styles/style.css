@@ -1,3 +1,4 @@
+/*========== Colours ==========*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
 @-webkit-keyframes filling {
   0%, 100% {
@@ -20,7 +21,7 @@
   width: 275px;
   height: 210px;
   border: 8px solid wheat;
-  box-shadow: 0 0 0 12px black;
+  box-shadow: 0 0 0 12px #3c1a0e;
   border-radius: 15px 15px 65px 85px;
   background: url(/media-assets/coffee.png);
   background-repeat: repeat-x;
@@ -35,11 +36,30 @@
   right: -110px;
   width: 80px;
   height: 130px;
-  border: 10px solid black;
+  border: 10px solid #3c1a0e;
   border-radius: 35px 36px 80px 36px;
 }
 
 /*========== Colours ==========*/
+.coffee-container section {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  scroll-snap-align: start;
+  min-block-size: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coffee-container section:nth-of-type(even) {
+  color: hsl(320deg, 80%, 90%);
+  background: hsl(320deg, 80%, 40%);
+}
+.coffee-container section:nth-of-type(odd) {
+  color: hsl(290deg, 80%, 90%);
+  background: hsl(290deg, 80%, 40%);
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -126,7 +146,7 @@ body {
 .menu-box ul li a {
   display: inline-block;
   text-decoration: none;
-  color: gray;
+  color: #ab986f;
   font-size: 6.5rem;
   font-weight: 600;
   position: relative;
@@ -135,7 +155,7 @@ body {
 }
 .menu-box ul li a:hover {
   font-size: 8rem;
-  color: cyan;
+  color: #f4a460;
 }
 
 .main {
@@ -156,7 +176,7 @@ body {
   text-align: left;
   font-size: 6rem;
   line-height: 1;
-  background: -webkit-linear-gradient(15deg, #3c1a0e, #e19b68);
+  background: -webkit-linear-gradient(15deg, #5e2815, #f4a460);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -175,9 +195,9 @@ body {
 }
 
 .main .right-content {
-  width: 65rem;
+  width: 60rem;
   height: 54rem;
-  background-color: #e19b68;
+  background-color: #ab986f;
   border-radius: 2rem;
   display: flex;
   justify-content: center;
