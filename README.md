@@ -1,5 +1,3 @@
-Got it! Here's an updated `README.md` for your coffee landing page website that does not involve npm:
-
 ```markdown
 # Coffee Landing Page
 
