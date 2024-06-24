@@ -1,3 +1,4 @@
+```markdown
 # Coffee Landing Page
 
 Welcome to the Coffee Landing Page project! This is a simple yet visually appealing landing page for a coffee shop or brand. It features good looking animations but does not include responsive design.
@@ -12,6 +13,7 @@ Welcome to the Coffee Landing Page project! This is a simple yet visually appeal
 
 ## Project Structure
 
+```
 coffee-landing-page/
 ├── index.html
 ├── index.js
@@ -24,6 +26,7 @@ coffee-landing-page/
 │   ├── style.css.map
 │   └── style.scss
 └── media-assets/
+```
 
 ### Files
 
@@ -104,4 +107,4 @@ Feel free to reach out if you have any questions or need further assistance.
 Enjoy your coffee and coding!
 ```
 
-This version of the `README.md` assumes you are using plain Sass for compiling your styles and provides instructions accordingly.
+This version corrects the project structure formatting and maintains the rest of the content accurately.
