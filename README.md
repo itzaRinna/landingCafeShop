@@ -13,7 +13,7 @@ Welcome to the Coffee Landing Page project! This is a simple yet visually appeal
 
 ## Project Structure
 
-```
+```md
   coffee-landing-page/
   ├── index.html
   ├── index.js
