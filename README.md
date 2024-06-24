@@ -1,4 +1,3 @@
-```markdown
 # Coffee Landing Page
 
 Welcome to the Coffee Landing Page project! This is a simple yet visually appealing landing page for a coffee shop or brand. It features good looking animations but does not include responsive design.
@@ -55,7 +54,7 @@ Ensure you have the following installed:
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/yourusername/coffee-landing-page.git
+   git clone https://github.com/itzaRinna/landingCafeShop.git
    ```
 2. Navigate to the project directory
    ```sh
