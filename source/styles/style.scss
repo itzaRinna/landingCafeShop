@@ -3,6 +3,15 @@
 @import './slider';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
+* {
+    scrollbar-width: none; // Firefox
+    -ms-overflow-style: none; // IE 10+
+}
+
+*::-webkit-scrollbar { // WebKit browsers
+    display: none;
+}
+
 body{
     margin: 0;
     min-height: 100vh;
@@ -108,7 +117,7 @@ body{
 }
 
 .main{
-    width: 100vw;
+    width: 96vw;
     height: 54vw;
     display: flex;
     justify-content: center;
@@ -145,7 +154,7 @@ body{
 }
 .main .right-content{
     width: 54rem;
-    height: 50rem;
+    height: 48rem;
     background-color: $white-coffee;
     border-radius: 2rem;
     display: flex;
