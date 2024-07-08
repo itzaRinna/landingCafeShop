@@ -32,6 +32,13 @@
 }
 
 /*========== Colours ==========*/
+/* styles/style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Hide overflow to prevent double scrollbars */
+}
+
 .coffee-container {
   display: flex;
   flex-direction: column;
@@ -39,32 +46,35 @@
   overflow-y: scroll;
   width: 100%;
   height: 100vh;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
+
+.coffee-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
 .coffee-container section {
-  position: sticky;
-  top: 0;
   scroll-snap-align: start;
   width: 100%;
-  height: 720px;
+  height: 100vh; /* Ensure each section takes full viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0; /* Prevent sections from shrinking */
 }
+
 .coffee-container section img {
   max-width: 80%;
   max-height: 80%;
   -o-object-fit: contain;
      object-fit: contain;
-  display: block;
 }
+
 @media (max-width: 1280px) and (max-height: 720px) {
   .coffee-container section img {
     max-width: 100%;
     max-height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
 }
 .coffee-container section h1 {
@@ -75,17 +85,15 @@
   padding: 1rem;
   border-radius: 0.5rem;
 }
+
 .coffee-container section:nth-of-type(even) {
   color: hsl(320, 80%, 90%);
   background: hsl(320, 80%, 40%);
 }
+
 .coffee-container section:nth-of-type(odd) {
   color: hsl(290, 80%, 90%);
   background: hsl(290, 80%, 40%);
-}
-
-.coffee-container::-webkit-scrollbar {
-  display: none;
 }
 
 * {
@@ -239,4 +247,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
