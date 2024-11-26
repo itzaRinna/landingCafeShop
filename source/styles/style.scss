@@ -123,11 +123,29 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $xiketic;
 }
 .main .left-content{
     width: 48rem;
     height: 48rem;
     background-color: $xiketic;
+    display: flex;
+    flex-direction: column;
+    button{
+        width: 8.5rem;
+        height: 2.5rem;
+        border-radius: 5rem;
+        margin: -4rem auto;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;      
+        font-family: 'Open Sans', sans-serif;  
+        transition: 0.25s;
+    }    
+    button:hover{
+        background: $eerie-black;
+        color: whitesmoke;
+    }
     h1{
         padding: 5rem;
         text-align: left;
@@ -137,20 +155,7 @@ body{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .button{
-        width: 8.5rem;
-        height: 2.5rem;
-        border-radius: 5rem;
-        margin: -4rem auto;
-        text-align: center;
-        color: cyan;
-        padding-top: 12px;        
-        background: black;
-    }    
-    .button:hover{
-        background: linear-gradient(60deg, cyan, lavender);
 
-    }
     
 }
 .main .right-content{
